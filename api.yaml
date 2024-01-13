@@ -15,3 +15,5 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+
+# Trigger GitHub Actions CD workflow
