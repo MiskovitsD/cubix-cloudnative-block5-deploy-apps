@@ -15,3 +15,6 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+
+openTelemetry:
+  targetUrl: http://tempo.tools:4317
