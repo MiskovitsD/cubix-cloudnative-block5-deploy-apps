@@ -4,9 +4,9 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-env:
-- name: API_MESSAGE_URL
-  value: http://db-spring-cubix:8080
+configMap:
+  enabled: true
+  as: file
 
 ingress:
   enabled: true
@@ -15,5 +15,3 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-
-# Trigger GitHub Actions CD workflow
