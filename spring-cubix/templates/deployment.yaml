@@ -43,7 +43,7 @@ spec:
               mountPath: /opt/app/config
           {{- end }}
           startupProbe:
-            periodSeconds: 5
+            periodSeconds: 10
             failureThreshold: 5
             tcpSocket:
               port: 8080
